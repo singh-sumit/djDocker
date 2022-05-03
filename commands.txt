@@ -1,0 +1,6 @@
+# creates image
+docker build --tag python-django .
+
+# creates and run container
+    # guest_port:host_port
+docker run --publish 8000:8000 python-django
